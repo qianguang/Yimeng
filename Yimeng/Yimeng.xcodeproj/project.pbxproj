@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		117B24CD1C67465C0016D47D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B24CC1C67465C0016D47D /* main.m */; };
 		117B24D01C67465C0016D47D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B24CF1C67465C0016D47D /* AppDelegate.m */; };
-		117B24D31C67465C0016D47D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B24D21C67465C0016D47D /* ViewController.m */; };
-		117B24D61C67465C0016D47D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117B24D41C67465C0016D47D /* Main.storyboard */; };
 		117B24D91C67465C0016D47D /* Yimeng.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 117B24D71C67465C0016D47D /* Yimeng.xcdatamodeld */; };
 		117B24DB1C67465C0016D47D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117B24DA1C67465C0016D47D /* Assets.xcassets */; };
 		117B24DE1C67465C0016D47D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117B24DC1C67465C0016D47D /* LaunchScreen.storyboard */; };
 		117B24E91C67465C0016D47D /* YimengTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B24E81C67465C0016D47D /* YimengTests.m */; };
 		117B24F41C67465C0016D47D /* YimengUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B24F31C67465C0016D47D /* YimengUITests.m */; };
+		117B25061C6748360016D47D /* QGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B25041C6748360016D47D /* QGViewController.m */; };
+		117B25071C6748360016D47D /* QGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117B25051C6748360016D47D /* QGViewController.xib */; };
+		117B250B1C67485C0016D47D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B25091C67485C0016D47D /* LoginViewController.m */; };
+		117B250C1C67485C0016D47D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117B250A1C67485C0016D47D /* LoginViewController.xib */; };
+		117B25101C6748A30016D47D /* QGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B250E1C6748A30016D47D /* QGNavigationController.m */; };
+		117B25111C6748A30016D47D /* QGNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117B250F1C6748A30016D47D /* QGNavigationController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +44,6 @@
 		117B24CC1C67465C0016D47D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		117B24CE1C67465C0016D47D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		117B24CF1C67465C0016D47D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		117B24D11C67465C0016D47D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		117B24D21C67465C0016D47D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		117B24D51C67465C0016D47D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		117B24D81C67465C0016D47D /* Yimeng.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yimeng.xcdatamodel; sourceTree = "<group>"; };
 		117B24DA1C67465C0016D47D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		117B24DD1C67465C0016D47D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +54,17 @@
 		117B24EF1C67465C0016D47D /* YimengUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YimengUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		117B24F31C67465C0016D47D /* YimengUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YimengUITests.m; sourceTree = "<group>"; };
 		117B24F51C67465C0016D47D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		117B25031C6748360016D47D /* QGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGViewController.h; sourceTree = "<group>"; };
+		117B25041C6748360016D47D /* QGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGViewController.m; sourceTree = "<group>"; };
+		117B25051C6748360016D47D /* QGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGViewController.xib; sourceTree = "<group>"; };
+		117B25081C67485C0016D47D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		117B25091C67485C0016D47D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		117B250A1C67485C0016D47D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		117B250D1C6748A30016D47D /* QGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGNavigationController.h; sourceTree = "<group>"; };
+		117B250E1C6748A30016D47D /* QGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGNavigationController.m; sourceTree = "<group>"; };
+		117B250F1C6748A30016D47D /* QGNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGNavigationController.xib; sourceTree = "<group>"; };
+		117B25121C6748EC0016D47D /* Yimeng.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yimeng.pch; sourceTree = "<group>"; };
+		117B25131C674EA80016D47D /* GlobalMarcro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalMarcro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +117,9 @@
 			children = (
 				117B24CE1C67465C0016D47D /* AppDelegate.h */,
 				117B24CF1C67465C0016D47D /* AppDelegate.m */,
-				117B24D11C67465C0016D47D /* ViewController.h */,
-				117B24D21C67465C0016D47D /* ViewController.m */,
-				117B24D41C67465C0016D47D /* Main.storyboard */,
+				117B25021C67480F0016D47D /* BaseViewController */,
+				117B25011C67477B0016D47D /* Login */,
+				117B25141C674EB80016D47D /* Global */,
 				117B24DA1C67465C0016D47D /* Assets.xcassets */,
 				117B24DC1C67465C0016D47D /* LaunchScreen.storyboard */,
 				117B24DF1C67465C0016D47D /* Info.plist */,
@@ -121,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				117B24CC1C67465C0016D47D /* main.m */,
+				117B25121C6748EC0016D47D /* Yimeng.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +154,37 @@
 				117B24F51C67465C0016D47D /* Info.plist */,
 			);
 			path = YimengUITests;
+			sourceTree = "<group>";
+		};
+		117B25011C67477B0016D47D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				117B25081C67485C0016D47D /* LoginViewController.h */,
+				117B25091C67485C0016D47D /* LoginViewController.m */,
+				117B250A1C67485C0016D47D /* LoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		117B25021C67480F0016D47D /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				117B25031C6748360016D47D /* QGViewController.h */,
+				117B25041C6748360016D47D /* QGViewController.m */,
+				117B25051C6748360016D47D /* QGViewController.xib */,
+				117B250D1C6748A30016D47D /* QGNavigationController.h */,
+				117B250E1C6748A30016D47D /* QGNavigationController.m */,
+				117B250F1C6748A30016D47D /* QGNavigationController.xib */,
+			);
+			name = BaseViewController;
+			sourceTree = "<group>";
+		};
+		117B25141C674EB80016D47D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				117B25131C674EA80016D47D /* GlobalMarcro.h */,
+			);
+			name = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +292,9 @@
 			files = (
 				117B24DE1C67465C0016D47D /* LaunchScreen.storyboard in Resources */,
 				117B24DB1C67465C0016D47D /* Assets.xcassets in Resources */,
-				117B24D61C67465C0016D47D /* Main.storyboard in Resources */,
+				117B25071C6748360016D47D /* QGViewController.xib in Resources */,
+				117B250C1C67485C0016D47D /* LoginViewController.xib in Resources */,
+				117B25111C6748A30016D47D /* QGNavigationController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +319,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117B25061C6748360016D47D /* QGViewController.m in Sources */,
+				117B250B1C67485C0016D47D /* LoginViewController.m in Sources */,
 				117B24D91C67465C0016D47D /* Yimeng.xcdatamodeld in Sources */,
-				117B24D31C67465C0016D47D /* ViewController.m in Sources */,
 				117B24D01C67465C0016D47D /* AppDelegate.m in Sources */,
+				117B25101C6748A30016D47D /* QGNavigationController.m in Sources */,
 				117B24CD1C67465C0016D47D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,14 +360,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		117B24D41C67465C0016D47D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				117B24D51C67465C0016D47D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		117B24DC1C67465C0016D47D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -415,7 +455,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Yimeng/Yimeng.pch";
 				INFOPLIST_FILE = Yimeng/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ym.Yimeng;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +470,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Yimeng/Yimeng.pch";
 				INFOPLIST_FILE = Yimeng/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ym.Yimeng;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +548,7 @@
 				117B24FA1C67465C0016D47D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		117B24FB1C67465C0016D47D /* Build configuration list for PBXNativeTarget "YimengTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +557,7 @@
 				117B24FD1C67465C0016D47D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		117B24FE1C67465C0016D47D /* Build configuration list for PBXNativeTarget "YimengUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +566,7 @@
 				117B25001C67465C0016D47D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

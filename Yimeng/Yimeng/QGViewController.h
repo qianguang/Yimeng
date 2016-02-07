@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  QGViewController.h
 //  Yimeng
 //
 //  Created by LQG on 16/2/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface QGViewController : UIViewController
 
 @end
-
