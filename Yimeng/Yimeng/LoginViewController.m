@@ -77,7 +77,7 @@
 
 - (void)rightItemAction:(UIBarButtonItem *)item
 {
-    NSLog(@"更多d ");
+    NSLog(@"更多的 ");
 }
 
 - (IBAction)rememberBtnAction:(UIButton *)sender
