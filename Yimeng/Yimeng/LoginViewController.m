@@ -39,6 +39,7 @@
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(0, 0, 35, 35);
     [btn setImage:[UIImage imageNamed:@"more"] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(rightItemAction:) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -76,7 +77,7 @@
 
 - (void)rightItemAction:(UIBarButtonItem *)item
 {
-    
+    NSLog(@"更多");
 }
 
 - (IBAction)rememberBtnAction:(UIButton *)sender
