@@ -77,7 +77,7 @@
 
 - (void)rightItemAction:(UIBarButtonItem *)item
 {
-    NSLog(@"了解易梦");
+    NSLog(@"了解易梦！");
 }
 
 - (IBAction)rememberBtnAction:(UIButton *)sender
