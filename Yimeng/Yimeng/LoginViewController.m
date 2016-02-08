@@ -77,7 +77,7 @@
 
 - (void)rightItemAction:(UIBarButtonItem *)item
 {
-    NSLog(@"更多的 ");
+    NSLog(@"更多的测试 ");
 }
 
 - (IBAction)rememberBtnAction:(UIButton *)sender
