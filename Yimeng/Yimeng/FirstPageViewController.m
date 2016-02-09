@@ -30,7 +30,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.navigationController.navigationBarHidden = YES;
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -41,6 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"首页";
     self.view.backgroundColor = [UIColor blackColor];
     [self createScrollView];
     [self cutView];
@@ -50,7 +51,7 @@
 {
     NSArray *imageArray = [NSArray arrayWithObjects:@"1", @"2", nil];
     for (int i = 0; i < imageArray.count; i++) {
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i*SCREEN_WIDTH, -20, SCREEN_WIDTH, SCREEN_WIDTH*0.618)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i*SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_WIDTH*0.618)];
         imageView.image = [UIImage imageNamed:imageArray[i]];
         [_mScrollView addSubview:imageView];
     }
