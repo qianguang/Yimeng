@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "FirstPageViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,6 +29,18 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)loginSuccess
+{
+    FirstPageViewController *firstVC = [[FirstPageViewController alloc] init];
+    QGNavigationController *firstNVC = [[QGNavigationController alloc] initWithRootViewController:firstVC];
+    self.window.rootViewController = firstNVC;
+}
+
+- (void)logoutSuccess
+{
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

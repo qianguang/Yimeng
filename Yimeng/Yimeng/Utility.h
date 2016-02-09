@@ -19,6 +19,7 @@
  *修改视图层
  */
 + (void)setRoundRectWithView:(UIView *)view andCorner:(float)corner;
++ (void)setRoundRectWithView:(UIView *)view andCorner:(float)corner andShadowOpacity:(float)shadowOpacity;
 /**
  *创建返回按钮
  */

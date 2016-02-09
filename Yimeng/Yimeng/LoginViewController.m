@@ -25,6 +25,11 @@
 
 @implementation LoginViewController
 
+- (void)dealloc
+{
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -87,12 +92,14 @@
 
 - (IBAction)forgetPwdAction:(UIButton *)sender
 {
+    //TODO:忘记密码
     [Utility popWithString:@"忘记密码" onView:self.view];
 }
 
 - (IBAction)loginBtnAction:(UIButton *)sender
 {
-    [Utility popWithString:@"login" onView:self.view];
+    //TODO:登录
+    [appDelegate loginSuccess];
 }
 
 #pragma mark --UIScrollViewDelegate

@@ -33,6 +33,15 @@
     layer.masksToBounds = YES;
 }
 
++ (void)setRoundRectWithView:(UIView *)view andCorner:(float)corner andShadowOpacity:(float)shadowOpacity
+{
+    CALayer *layer = view.layer;
+    layer.cornerRadius = corner;
+    layer.masksToBounds = YES;
+    layer.shadowColor = [UIColor blackColor].CGColor;
+    layer.shadowOpacity = shadowOpacity;
+}
+
 + (UIButton *)createBackButton
 {
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];

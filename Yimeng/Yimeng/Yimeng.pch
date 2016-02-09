@@ -15,5 +15,6 @@
 #import "QGNavigationController.h"
 #import "GlobalMarcro.h"
 #import "Utility.h"
+#import "AppDelegate.h"
 
 #endif /* Yimeng_pch */

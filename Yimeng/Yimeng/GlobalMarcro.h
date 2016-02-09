@@ -59,4 +59,16 @@
 #undef  QCLog
 #define QCLog(s,...) printf("<%s,Line:%d> info:%s\n",[[NSString stringWithUTF8String:__FILE__]lastPathComponent].UTF8String,__LINE__,[NSString stringWithFormat:(s),##__VA_ARGS__].UTF8String)
 
+typedef enum : NSUInteger {
+    FirstPageGameCenter,
+    FirstPageQiangHongbao,
+    FirstPageFenHong,
+    FirstPageChengweiTuiguangyuan,
+    FirstPageChongzhiFanli,
+    FirstPageYaoqingPengyou,
+    FirstPageLingquLibao,
+    FirstPageMyGames,
+    FirstPagePersonalCenter,
+} FirstPage;
+
 #endif
