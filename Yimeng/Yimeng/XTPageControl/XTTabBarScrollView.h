@@ -20,8 +20,8 @@
 
 @interface XTTabBarScrollView : UIScrollView
 
-- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andStyle:(XTTabBarStyle)style;
-- (void)moveToIndex:(NSInteger)index;
+- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andTabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths andStyle:(XTTabBarStyle)style;
+- (void)moveToIndex:(NSInteger)index animation:(BOOL)animation;
 
 @property (assign, nonatomic) BOOL forceLeftAligment;
 @property (strong, nonatomic) UIColor *titleColorNormal;
@@ -31,6 +31,3 @@
 @property (weak, nonatomic) id<XTTabBarScrollViewDelegate> tabBarScrollViewDelegate;
 
 @end
-// 版权属于原作者
-// http://code4app.com (cn) http://code4app.net (en)
-// 发布代码于最专业的源码分享网站: Code4App.com

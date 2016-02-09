@@ -27,11 +27,12 @@
 
 @implementation XTPageViewController
 
-static CGFloat kXTDefaultTabBarHeight = 40;
+static CGFloat kXTDefaultTabBarHeight = 35;
 
 - (instancetype)init {
     if (self = [super init]) {
         _style = XTTabBarStyleCursorUnderline;
+        _tabBarHeight = kXTDefaultTabBarHeight;
     }
     return self;
 }
@@ -39,6 +40,7 @@ static CGFloat kXTDefaultTabBarHeight = 40;
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         _style = XTTabBarStyleCursorUnderline;
+        _tabBarHeight = kXTDefaultTabBarHeight;
     }
     return self;
 }
@@ -46,6 +48,7 @@ static CGFloat kXTDefaultTabBarHeight = 40;
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         _style = XTTabBarStyleCursorUnderline;
+        _tabBarHeight = kXTDefaultTabBarHeight;
     }
     return self;
 }
@@ -53,6 +56,7 @@ static CGFloat kXTDefaultTabBarHeight = 40;
 - (instancetype)initWithTabBarStyle:(XTTabBarStyle)style {
     if (self = [super init]) {
         _style = style;
+        _tabBarHeight = kXTDefaultTabBarHeight;
     }
     return self;
 }
@@ -90,13 +94,19 @@ static CGFloat kXTDefaultTabBarHeight = 40;
     if (self.parentViewController) {
         self.parentViewController.automaticallyAdjustsScrollViewInsets = NO;
     }
-    self.tabBarHeight = kXTDefaultTabBarHeight;
     NSInteger numberOfPages = [self.dataSource numberOfPages];
     NSMutableArray *titles = [NSMutableArray array];
     for (NSInteger i=0; i<numberOfPages; i++) {
         [titles addObject:[self.dataSource titleOfPage:i]];
     }
-    self.tabBar = [self createTabBar:titles style:style];
+    NSMutableArray *tabBarItemWidths;
+    if (self.delegate && [self.delegate conformsToProtocol:@protocol(XTPageViewControllerDelegate)]) {
+        tabBarItemWidths = [NSMutableArray array];
+        for (NSInteger i=0; i<numberOfPages; i++) {
+            [tabBarItemWidths addObject:[NSNumber numberWithDouble:[self.delegate widthOfTabBarItemForPage:i]]];
+        }
+    }
+    self.tabBar = [self createTabBar:titles tabBarItemWidths:tabBarItemWidths style:style];
     [self.view addSubview:self.tabBar];
     
     self.underlineView = [[UIView alloc] init];
@@ -112,11 +122,11 @@ static CGFloat kXTDefaultTabBarHeight = 40;
     [self.view addSubview:self.pageScrollView];
     
     self.forceToShowControllerWhenFirstTime = YES;
-    [self.tabBar moveToIndex:0];
+    [self.tabBar moveToIndex:0 animation:NO];
 }
 
-- (XTTabBar*)createTabBar:(NSArray<NSString*>*)titles style:(XTTabBarStyle)style {
-    XTTabBar* tabBar = [[XTTabBar alloc] initWithTitles:titles andStyle:style];
+- (XTTabBar*)createTabBar:(NSArray<NSString*>*)titles tabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths style:(XTTabBarStyle)style {
+    XTTabBar* tabBar = [[XTTabBar alloc] initWithTitles:titles andTabBarItemWidths:tabBarItemWidths andStyle:style];
     tabBar.tabBarDelegate = self;
     tabBar.forceLeftAligment = self.forceLeftAligment;
     if (self.tabBarCursorColor) {
@@ -159,11 +169,9 @@ static CGFloat kXTDefaultTabBarHeight = 40;
 - (void)willChanged:(NSInteger)preIndex nextIndex:(NSInteger)nextIndex {
     if (self.forceToShowControllerWhenFirstTime) {
         self.forceToShowControllerWhenFirstTime = NO;
-        self.pageScrollView.scrollEnabled = NO;
         [self showNextController:nextIndex];
     } else {
         if (!self.disableScroll) {
-            self.pageScrollView.scrollEnabled = NO;
             self.nextIndex = nextIndex;
             self.isFromTabBarItemWillChanged = YES;
             [self.pageScrollView setContentOffset:CGPointMake(nextIndex * self.pageScrollView.bounds.size.width, 0) animated:YES];
@@ -173,7 +181,10 @@ static CGFloat kXTDefaultTabBarHeight = 40;
 }
 
 - (void)didChanged:(NSInteger)preIndex nextIndex:(NSInteger)nextIndex {
-    self.pageScrollView.scrollEnabled = YES;
+    if (self.currentPage != nextIndex) {
+        self.disableScroll = YES;
+        [self.tabBar moveToIndex:self.currentPage animation:YES];
+    }
 }
 
 #pragma mark scrollview delegate
@@ -186,7 +197,7 @@ static CGFloat kXTDefaultTabBarHeight = 40;
         if (self.currentPage != page && !self.isFromTabBarItemWillChanged) {
             self.disableScroll = YES;
             [self showNextController:page];
-            [self.tabBar moveToIndex:page];
+            [self.tabBar moveToIndex:page animation:YES];
         }
     }
 }
@@ -214,6 +225,3 @@ static CGFloat kXTDefaultTabBarHeight = 40;
 }
 
 @end
-// 版权属于原作者
-// http://code4app.com (cn) http://code4app.net (en)
-// 发布代码于最专业的源码分享网站: Code4App.com

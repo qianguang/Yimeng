@@ -14,15 +14,17 @@
 @property (strong, nonatomic) XTTabBarScrollView *tabBarScrollView;
 @property (assign, nonatomic) XTTabBarStyle tabBarStyle;
 @property (strong, nonatomic) NSArray<NSString*> *titles;
+@property (strong, nonatomic) NSArray<NSNumber*> *tabBarItemWidths;
 
 @end
 
 @implementation XTTabBar
 
-- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andStyle:(XTTabBarStyle)style {
+- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andTabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths andStyle:(XTTabBarStyle)style {
     if (self = [super init]) {
         _tabBarStyle = style;
         _titles = titles;
+        _tabBarItemWidths = tabBarItemWidths;
         [self setup];
     }
     return self;
@@ -30,12 +32,12 @@
 
 - (void)setup {
     self.backgroundColor = [UIColor whiteColor];
-    self.tabBarScrollView = [[XTTabBarScrollView alloc] initWithTitles:self.titles andStyle:self.tabBarStyle];
+    self.tabBarScrollView = [[XTTabBarScrollView alloc] initWithTitles:self.titles andTabBarItemWidths:self.tabBarItemWidths andStyle:self.tabBarStyle];
     [self addSubview:self.tabBarScrollView];
 }
 
-- (void)moveToIndex:(NSInteger)index {
-   [self.tabBarScrollView moveToIndex:index];
+- (void)moveToIndex:(NSInteger)index animation:(BOOL)animation {
+   [self.tabBarScrollView moveToIndex:index animation:animation];
 }
 
 - (void)layoutSubviews {
@@ -98,6 +100,3 @@
 }
 
 @end
-// 版权属于原作者
-// http://code4app.com (cn) http://code4app.net (en)
-// 发布代码于最专业的源码分享网站: Code4App.com

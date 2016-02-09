@@ -87,7 +87,7 @@
             GameCenterViewController *gameCenterVC = [[GameCenterViewController alloc] initWithTabBarStyle:XTTabBarStyleCursorUnderline];
             gameCenterVC.dataSource = self;
             gameCenterVC.tabBarCursorColor = [UIColor darkGrayColor];
-            gameCenterVC.tabBarHeight = 44;
+            gameCenterVC.tabBarHeight = 40;
             [self.navigationController pushViewController:gameCenterVC animated:YES];
         }
             break;
