@@ -7,8 +7,11 @@
 //
 
 #import "FirstPageViewController.h"
+#import "GameCenterViewController.h"
+#import "AllGamesViewController.h"
+#import "MyGamesViewController.h"
 
-@interface FirstPageViewController ()
+@interface FirstPageViewController () <XTPageViewControllerDataSource>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *mScrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *mPageControl;
@@ -23,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *myGamesBtn;
 @property (weak, nonatomic) IBOutlet UIButton *personalCenterBtn;
 
+@property (strong, nonatomic) NSArray *viewControllersArray;
 
 @end
 
@@ -30,12 +34,12 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBar.hidden = NO;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBar.hidden = NO;
 }
 
 - (void)viewDidLoad {
@@ -77,7 +81,14 @@
     switch (tag) {
         case FirstPageGameCenter:
         {
-            NSLog(@"游戏中心");
+            AllGamesViewController *allGamesVC = [[AllGamesViewController alloc] init];
+            MyGamesViewController *myGamesVC = [[MyGamesViewController alloc] init];
+            _viewControllersArray = [NSArray arrayWithObjects:allGamesVC, myGamesVC, nil];
+            GameCenterViewController *gameCenterVC = [[GameCenterViewController alloc] initWithTabBarStyle:XTTabBarStyleCursorUnderline];
+            gameCenterVC.dataSource = self;
+            gameCenterVC.tabBarCursorColor = [UIColor darkGrayColor];
+            gameCenterVC.tabBarHeight = 44;
+            [self.navigationController pushViewController:gameCenterVC animated:YES];
         }
             break;
         case FirstPageQiangHongbao:
@@ -124,6 +135,26 @@
         default:
             break;
     }
+    
+}
+
+- (NSInteger)numberOfPages
+{
+    return _viewControllersArray.count;
+}
+
+- (NSString *)titleOfPage:(NSInteger)page
+{
+    if (page == 0) {
+        return @"所有游戏";
+    }else{
+        return @"我的游戏";
+    }
+}
+
+- (UIViewController *)constrollerOfPage:(NSInteger)page
+{
+    return [_viewControllersArray objectAtIndex:page];
 }
 
 

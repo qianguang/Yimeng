@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1112D1DD1C68DAD6004F997A /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1112D1DC1C68DAD6004F997A /* Utility.m */; };
 		1112D1E31C68DB91004F997A /* LPPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1112D1E21C68DB91004F997A /* LPPopup.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		111340981C6A385F00DEBC02 /* GameCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111340961C6A385F00DEBC02 /* GameCenterViewController.m */; };
+		111340991C6A385F00DEBC02 /* GameCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111340971C6A385F00DEBC02 /* GameCenterViewController.xib */; };
 		117B24CD1C67465C0016D47D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B24CC1C67465C0016D47D /* main.m */; };
 		117B24D01C67465C0016D47D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 117B24CF1C67465C0016D47D /* AppDelegate.m */; };
 		117B24D91C67465C0016D47D /* Yimeng.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 117B24D71C67465C0016D47D /* Yimeng.xcdatamodeld */; };
@@ -24,6 +26,11 @@
 		117B25111C6748A30016D47D /* QGNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117B250F1C6748A30016D47D /* QGNavigationController.xib */; };
 		11F03FD11C699DBD00C49B3A /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F03FCF1C699DBD00C49B3A /* FirstPageViewController.m */; };
 		11F03FD21C699DBD00C49B3A /* FirstPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F03FD01C699DBD00C49B3A /* FirstPageViewController.xib */; };
+		11F2BFBF1C6A439C00D2CEFB /* AllGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BFBD1C6A439C00D2CEFB /* AllGamesViewController.m */; };
+		11F2BFC41C6A43C300D2CEFB /* MyGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BFC21C6A43C300D2CEFB /* MyGamesViewController.m */; };
+		11F2BFCE1C6A4BB100D2CEFB /* XTPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BFC81C6A4BB100D2CEFB /* XTPageViewController.m */; };
+		11F2BFCF1C6A4BB100D2CEFB /* XTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BFCA1C6A4BB100D2CEFB /* XTTabBar.m */; };
+		11F2BFD01C6A4BB100D2CEFB /* XTTabBarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BFCC1C6A4BB100D2CEFB /* XTTabBarScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,9 @@
 		1112D1DC1C68DAD6004F997A /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		1112D1E11C68DB91004F997A /* LPPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPopup.h; sourceTree = "<group>"; };
 		1112D1E21C68DB91004F997A /* LPPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPopup.m; sourceTree = "<group>"; };
+		111340951C6A385F00DEBC02 /* GameCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterViewController.h; sourceTree = "<group>"; };
+		111340961C6A385F00DEBC02 /* GameCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterViewController.m; sourceTree = "<group>"; };
+		111340971C6A385F00DEBC02 /* GameCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameCenterViewController.xib; sourceTree = "<group>"; };
 		117B24C81C67465C0016D47D /* Yimeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yimeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		117B24CC1C67465C0016D47D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		117B24CE1C67465C0016D47D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +86,17 @@
 		11F03FCE1C699DBD00C49B3A /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
 		11F03FCF1C699DBD00C49B3A /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
 		11F03FD01C699DBD00C49B3A /* FirstPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPageViewController.xib; sourceTree = "<group>"; };
+		11F2BFBC1C6A439C00D2CEFB /* AllGamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllGamesViewController.h; sourceTree = "<group>"; };
+		11F2BFBD1C6A439C00D2CEFB /* AllGamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllGamesViewController.m; sourceTree = "<group>"; };
+		11F2BFC11C6A43C300D2CEFB /* MyGamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGamesViewController.h; sourceTree = "<group>"; };
+		11F2BFC21C6A43C300D2CEFB /* MyGamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGamesViewController.m; sourceTree = "<group>"; };
+		11F2BFC71C6A4BB100D2CEFB /* XTPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPageViewController.h; sourceTree = "<group>"; };
+		11F2BFC81C6A4BB100D2CEFB /* XTPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPageViewController.m; sourceTree = "<group>"; };
+		11F2BFC91C6A4BB100D2CEFB /* XTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTabBar.h; sourceTree = "<group>"; };
+		11F2BFCA1C6A4BB100D2CEFB /* XTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTabBar.m; sourceTree = "<group>"; };
+		11F2BFCB1C6A4BB100D2CEFB /* XTTabBarScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTabBarScrollView.h; sourceTree = "<group>"; };
+		11F2BFCC1C6A4BB100D2CEFB /* XTTabBarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTabBarScrollView.m; sourceTree = "<group>"; };
+		11F2BFCD1C6A4BB100D2CEFB /* XTTabBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTabBarStyle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +227,7 @@
 				1112D1DB1C68DAD6004F997A /* Utility.h */,
 				1112D1DC1C68DAD6004F997A /* Utility.m */,
 				117B25131C674EA80016D47D /* GlobalMarcro.h */,
+				11F2BFC61C6A4BB100D2CEFB /* XTPageControl */,
 				1112D1E01C68DB91004F997A /* popupview */,
 			);
 			name = Global;
@@ -217,8 +239,30 @@
 				11F03FCE1C699DBD00C49B3A /* FirstPageViewController.h */,
 				11F03FCF1C699DBD00C49B3A /* FirstPageViewController.m */,
 				11F03FD01C699DBD00C49B3A /* FirstPageViewController.xib */,
+				111340951C6A385F00DEBC02 /* GameCenterViewController.h */,
+				111340961C6A385F00DEBC02 /* GameCenterViewController.m */,
+				111340971C6A385F00DEBC02 /* GameCenterViewController.xib */,
+				11F2BFBC1C6A439C00D2CEFB /* AllGamesViewController.h */,
+				11F2BFBD1C6A439C00D2CEFB /* AllGamesViewController.m */,
+				11F2BFC11C6A43C300D2CEFB /* MyGamesViewController.h */,
+				11F2BFC21C6A43C300D2CEFB /* MyGamesViewController.m */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		11F2BFC61C6A4BB100D2CEFB /* XTPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				11F2BFC71C6A4BB100D2CEFB /* XTPageViewController.h */,
+				11F2BFC81C6A4BB100D2CEFB /* XTPageViewController.m */,
+				11F2BFC91C6A4BB100D2CEFB /* XTTabBar.h */,
+				11F2BFCA1C6A4BB100D2CEFB /* XTTabBar.m */,
+				11F2BFCB1C6A4BB100D2CEFB /* XTTabBarScrollView.h */,
+				11F2BFCC1C6A4BB100D2CEFB /* XTTabBarScrollView.m */,
+				11F2BFCD1C6A4BB100D2CEFB /* XTTabBarStyle.h */,
+			);
+			name = XTPageControl;
+			path = popupview/XTPageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +370,7 @@
 			files = (
 				11F03FD21C699DBD00C49B3A /* FirstPageViewController.xib in Resources */,
 				117B24DE1C67465C0016D47D /* LaunchScreen.storyboard in Resources */,
+				111340991C6A385F00DEBC02 /* GameCenterViewController.xib in Resources */,
 				117B24DB1C67465C0016D47D /* Assets.xcassets in Resources */,
 				117B25071C6748360016D47D /* QGViewController.xib in Resources */,
 				117B250C1C67485C0016D47D /* LoginViewController.xib in Resources */,
@@ -354,13 +399,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F2BFC41C6A43C300D2CEFB /* MyGamesViewController.m in Sources */,
+				11F2BFD01C6A4BB100D2CEFB /* XTTabBarScrollView.m in Sources */,
 				117B25061C6748360016D47D /* QGViewController.m in Sources */,
 				117B250B1C67485C0016D47D /* LoginViewController.m in Sources */,
+				11F2BFBF1C6A439C00D2CEFB /* AllGamesViewController.m in Sources */,
 				117B24D91C67465C0016D47D /* Yimeng.xcdatamodeld in Sources */,
+				111340981C6A385F00DEBC02 /* GameCenterViewController.m in Sources */,
 				117B24D01C67465C0016D47D /* AppDelegate.m in Sources */,
 				1112D1E31C68DB91004F997A /* LPPopup.m in Sources */,
 				1112D1DD1C68DAD6004F997A /* Utility.m in Sources */,
+				11F2BFCE1C6A4BB100D2CEFB /* XTPageViewController.m in Sources */,
 				117B25101C6748A30016D47D /* QGNavigationController.m in Sources */,
+				11F2BFCF1C6A4BB100D2CEFB /* XTTabBar.m in Sources */,
 				117B24CD1C67465C0016D47D /* main.m in Sources */,
 				11F03FD11C699DBD00C49B3A /* FirstPageViewController.m in Sources */,
 			);
