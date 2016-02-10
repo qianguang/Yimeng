@@ -2,12 +2,12 @@
 //  MyGamesViewController.h
 //  Yimeng
 //
-//  Created by LQG on 16/2/9.
+//  Created by LQG on 16/2/10.
 //  Copyright © 2016年 LQG. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "QGViewController.h"
 
-@interface MyGamesViewController : UITableViewController
+@interface MyGamesViewController : QGViewController
 
 @end

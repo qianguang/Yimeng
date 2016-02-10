@@ -81,13 +81,8 @@
     switch (tag) {
         case FirstPageGameCenter:
         {
-            AllGamesViewController *allGamesVC = [[AllGamesViewController alloc] init];
-            MyGamesViewController *myGamesVC = [[MyGamesViewController alloc] init];
-            _viewControllersArray = [NSArray arrayWithObjects:allGamesVC, myGamesVC, nil];
-            GameCenterViewController *gameCenterVC = [[GameCenterViewController alloc] initWithTabBarStyle:XTTabBarStyleCursorUnderline];
-            gameCenterVC.dataSource = self;
-            gameCenterVC.tabBarCursorColor = [UIColor darkGrayColor];
-            gameCenterVC.tabBarHeight = 40;
+            GameCenterViewController *gameCenterVC = [[GameCenterViewController alloc] init];
+            gameCenterVC.gamesType = FirstPageGameCenter;
             [self.navigationController pushViewController:gameCenterVC animated:YES];
         }
             break;
@@ -123,7 +118,9 @@
             break;
         case FirstPageMyGames:
         {
-            NSLog(@"我的游戏");
+            GameCenterViewController *gameCenterVC = [[GameCenterViewController alloc] init];
+            gameCenterVC.gamesType = FirstPageMyGames;
+            [self.navigationController pushViewController:gameCenterVC animated:YES];
         }
             break;
         case FirstPagePersonalCenter:

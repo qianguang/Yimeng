@@ -7,15 +7,69 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameCenterViewController">
             <connections>
+                <outlet property="allGamesBtn" destination="W5L-R7-jda" id="iKf-OU-Dom"/>
+                <outlet property="myGamesBtn" destination="t1D-ou-4TW" id="nfs-05-g7h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5L-R7-jda">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="77x-YV-VDW"/>
+                        <constraint firstAttribute="width" constant="72" id="hWu-g7-ofX"/>
+                    </constraints>
+                    <state key="normal" title="所有游戏">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hWu-g7-ofX"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="allGamesBtnAction:" destination="-1" eventType="touchUpInside" id="ZDM-KA-Czw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1D-ou-4TW">
+                    <rect key="frame" x="187" y="0.0" width="187.5" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="EpV-C3-cyP"/>
+                        <constraint firstAttribute="width" constant="72" id="YZs-2F-MAC"/>
+                    </constraints>
+                    <state key="normal" title="我的游戏">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="YZs-2F-MAC"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="myGamesBtnAction:" destination="-1" eventType="touchUpInside" id="7VI-vs-z6O"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <constraints>
+                <constraint firstItem="W5L-R7-jda" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hHw-YF-zBW"/>
+                <constraint firstAttribute="trailing" secondItem="t1D-ou-4TW" secondAttribute="trailing" id="oEh-9v-Xyg"/>
+                <constraint firstItem="t1D-ou-4TW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sDX-6l-bAb"/>
+                <constraint firstItem="W5L-R7-jda" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sQI-KY-QXw"/>
+                <constraint firstItem="t1D-ou-4TW" firstAttribute="leading" secondItem="W5L-R7-jda" secondAttribute="trailing" constant="92" id="wS4-CW-6MJ"/>
+                <constraint firstItem="t1D-ou-4TW" firstAttribute="leading" secondItem="W5L-R7-jda" secondAttribute="trailing" id="xKa-H6-end"/>
+                <constraint firstItem="t1D-ou-4TW" firstAttribute="width" secondItem="W5L-R7-jda" secondAttribute="width" id="yUp-i9-PMY"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wS4-CW-6MJ"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

@@ -7,7 +7,10 @@
 //
 
 #import "XTPageViewController.h"
+#import "QGViewController.h"
 
-@interface GameCenterViewController : XTPageViewController
+@interface GameCenterViewController : QGViewController
+
+@property (assign, nonatomic) NSInteger gamesType;
 
 @end
