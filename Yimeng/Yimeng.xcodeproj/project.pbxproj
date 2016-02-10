@@ -26,6 +26,7 @@
 		117B25111C6748A30016D47D /* QGNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117B250F1C6748A30016D47D /* QGNavigationController.xib */; };
 		11DF96871C6B37E1003C1574 /* MyGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF96851C6B37E1003C1574 /* MyGamesViewController.m */; };
 		11DF96881C6B37E1003C1574 /* MyGamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DF96861C6B37E1003C1574 /* MyGamesViewController.xib */; };
+		11DF968C1C6B38E3003C1574 /* QGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF968B1C6B38E3003C1574 /* QGScrollView.m */; };
 		11F03FD11C699DBD00C49B3A /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F03FCF1C699DBD00C49B3A /* FirstPageViewController.m */; };
 		11F03FD21C699DBD00C49B3A /* FirstPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F03FD01C699DBD00C49B3A /* FirstPageViewController.xib */; };
 		11F2BFBF1C6A439C00D2CEFB /* AllGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BFBD1C6A439C00D2CEFB /* AllGamesViewController.m */; };
@@ -87,6 +88,8 @@
 		11DF96841C6B37E1003C1574 /* MyGamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGamesViewController.h; sourceTree = "<group>"; };
 		11DF96851C6B37E1003C1574 /* MyGamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGamesViewController.m; sourceTree = "<group>"; };
 		11DF96861C6B37E1003C1574 /* MyGamesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyGamesViewController.xib; sourceTree = "<group>"; };
+		11DF968A1C6B38E3003C1574 /* QGScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGScrollView.h; sourceTree = "<group>"; };
+		11DF968B1C6B38E3003C1574 /* QGScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGScrollView.m; sourceTree = "<group>"; };
 		11F03FCE1C699DBD00C49B3A /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
 		11F03FCF1C699DBD00C49B3A /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
 		11F03FD01C699DBD00C49B3A /* FirstPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPageViewController.xib; sourceTree = "<group>"; };
@@ -160,6 +163,7 @@
 			children = (
 				117B24CE1C67465C0016D47D /* AppDelegate.h */,
 				117B24CF1C67465C0016D47D /* AppDelegate.m */,
+				11DF96891C6B38C4003C1574 /* CustomView */,
 				11F03FCD1C699B8900C49B3A /* ViewController */,
 				117B25021C67480F0016D47D /* BaseViewController */,
 				117B25011C67477B0016D47D /* Login */,
@@ -233,6 +237,15 @@
 				1112D1E01C68DB91004F997A /* popupview */,
 			);
 			name = Global;
+			sourceTree = "<group>";
+		};
+		11DF96891C6B38C4003C1574 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				11DF968A1C6B38E3003C1574 /* QGScrollView.h */,
+				11DF968B1C6B38E3003C1574 /* QGScrollView.m */,
+			);
+			name = CustomView;
 			sourceTree = "<group>";
 		};
 		11F03FCD1C699B8900C49B3A /* ViewController */ = {
@@ -413,6 +426,7 @@
 				1112D1E31C68DB91004F997A /* LPPopup.m in Sources */,
 				1112D1DD1C68DAD6004F997A /* Utility.m in Sources */,
 				11F2BFD91C6A5E9200D2CEFB /* XTPageViewController.m in Sources */,
+				11DF968C1C6B38E3003C1574 /* QGScrollView.m in Sources */,
 				117B25101C6748A30016D47D /* QGNavigationController.m in Sources */,
 				11F2BFDA1C6A5E9200D2CEFB /* XTTabBar.m in Sources */,
 				117B24CD1C67465C0016D47D /* main.m in Sources */,

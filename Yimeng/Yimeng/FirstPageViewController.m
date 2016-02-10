@@ -10,11 +10,9 @@
 #import "GameCenterViewController.h"
 #import "AllGamesViewController.h"
 #import "MyGamesViewController.h"
+#import "QGScrollView.h"
 
 @interface FirstPageViewController () <XTPageViewControllerDataSource>
-
-@property (weak, nonatomic) IBOutlet UIScrollView *mScrollView;
-@property (weak, nonatomic) IBOutlet UIPageControl *mPageControl;
 
 @property (weak, nonatomic) IBOutlet UIButton *gameCenterBtn;
 @property (weak, nonatomic) IBOutlet UIButton *qiangHongbaoBtn;
@@ -46,20 +44,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"首页";
+    
+    QGScrollView *mScrollView = [[QGScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH*0.618)];
+    [self.view addSubview:mScrollView];
+    
     self.view.backgroundColor = [UIColor blackColor];
-    [self createScrollView];
     [self cutView];
-}
-
-- (void)createScrollView
-{
-    NSArray *imageArray = [NSArray arrayWithObjects:@"1", @"2", nil];
-    for (int i = 0; i < imageArray.count; i++) {
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i*SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_WIDTH*0.618)];
-        imageView.image = [UIImage imageNamed:imageArray[i]];
-        [_mScrollView addSubview:imageView];
-    }
-    _mScrollView.contentSize = CGSizeMake(imageArray.count * SCREEN_WIDTH, _mScrollView.frame.size.height);
 }
 
 - (void)cutView
@@ -158,13 +148,6 @@
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
-}
-
-#pragma mark --UIScrollViewDelegate
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    _mPageControl.currentPage = scrollView.contentOffset.x/SCREEN_WIDTH;
 }
 
 - (void)didReceiveMemoryWarning {

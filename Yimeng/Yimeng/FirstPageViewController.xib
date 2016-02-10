@@ -13,8 +13,6 @@
                 <outlet property="fenhongBtn" destination="Xie-hu-rqd" id="WKu-Yq-xIp"/>
                 <outlet property="gameCenterBtn" destination="2iM-y6-vsL" id="y2W-vK-ljZ"/>
                 <outlet property="lingquLibaoBtn" destination="Uq8-gx-ghN" id="hHt-oN-esL"/>
-                <outlet property="mPageControl" destination="Q6t-2a-sG3" id="VuK-JD-gDY"/>
-                <outlet property="mScrollView" destination="wLM-2h-lsn" id="1Ar-ZD-TYO"/>
                 <outlet property="myGamesBtn" destination="IC6-Kb-CiX" id="1Cc-Ln-t0D"/>
                 <outlet property="personalCenterBtn" destination="3tw-JG-v95" id="bnz-Vs-9fc"/>
                 <outlet property="qiangHongbaoBtn" destination="YAI-kn-uBS" id="VtY-FO-HTs"/>
@@ -32,21 +30,9 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="wLM-2h-lsn" secondAttribute="height" multiplier="1:0.618" id="Lwm-Dc-vvM"/>
                     </constraints>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="MFE-es-icV"/>
-                    </connections>
                 </scrollView>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Q6t-2a-sG3">
-                    <rect key="frame" x="141" y="161" width="39" height="37"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="39" id="YAl-YS-N7t"/>
-                        <constraint firstAttribute="height" constant="37" id="YHh-hb-3JW"/>
-                    </constraints>
-                    <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                </pageControl>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iM-y6-vsL">
-                    <rect key="frame" x="2" y="200" width="316" height="90"/>
+                    <rect key="frame" x="2" y="200" width="316" height="90.5"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                     <state key="normal" title="游戏中心"/>
@@ -79,7 +65,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC6-Kb-CiX">
-                    <rect key="frame" x="2" y="475" width="104" height="90.5"/>
+                    <rect key="frame" x="2" y="476" width="104" height="90"/>
                     <color key="backgroundColor" red="0.36316031866589771" green="0.34937076031944025" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="我的游戏"/>
                     <connections>
@@ -87,7 +73,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUx-9Y-lII">
-                    <rect key="frame" x="108" y="384" width="104" height="90"/>
+                    <rect key="frame" x="108" y="384" width="104" height="91"/>
                     <color key="backgroundColor" red="0.91604429569150114" green="0.61891958758938115" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="邀请朋友"/>
                     <connections>
@@ -95,7 +81,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq8-gx-ghN">
-                    <rect key="frame" x="214" y="384" width="104" height="89.5"/>
+                    <rect key="frame" x="214" y="384" width="104" height="90.5"/>
                     <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="领取礼包"/>
                     <connections>
@@ -103,7 +89,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tw-JG-v95">
-                    <rect key="frame" x="108" y="475" width="210" height="90.5"/>
+                    <rect key="frame" x="108" y="476" width="210" height="90"/>
                     <color key="backgroundColor" red="0.4130646040214464" green="0.82145711886518946" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="个人中心"/>
                     <connections>
@@ -111,7 +97,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45e-8i-Z6h">
-                    <rect key="frame" x="2" y="384" width="104" height="89.5"/>
+                    <rect key="frame" x="2" y="384" width="104" height="90.5"/>
                     <color key="backgroundColor" red="1" green="0.27392514654690425" blue="0.54630624780804204" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="充值返利"/>
                     <connections>
@@ -129,7 +115,6 @@
                 <constraint firstItem="Uq8-gx-ghN" firstAttribute="leading" secondItem="cUx-9Y-lII" secondAttribute="trailing" constant="2" id="5Pu-hJ-XuY"/>
                 <constraint firstAttribute="trailing" secondItem="NdZ-3N-coz" secondAttribute="trailing" constant="2" id="6TU-nb-II7"/>
                 <constraint firstItem="NdZ-3N-coz" firstAttribute="top" secondItem="2iM-y6-vsL" secondAttribute="bottom" id="8Xs-ND-V0a"/>
-                <constraint firstItem="2iM-y6-vsL" firstAttribute="top" secondItem="Q6t-2a-sG3" secondAttribute="bottom" constant="2" id="8wS-FS-JVy"/>
                 <constraint firstItem="Xie-hu-rqd" firstAttribute="centerY" secondItem="YAI-kn-uBS" secondAttribute="centerY" id="9Wc-VU-Exc"/>
                 <constraint firstItem="Xie-hu-rqd" firstAttribute="height" secondItem="YAI-kn-uBS" secondAttribute="height" id="AMn-2N-BmX"/>
                 <constraint firstItem="NdZ-3N-coz" firstAttribute="width" secondItem="YAI-kn-uBS" secondAttribute="width" id="Bgd-gF-pDm"/>
@@ -153,13 +138,12 @@
                 <constraint firstItem="3tw-JG-v95" firstAttribute="centerY" secondItem="IC6-Kb-CiX" secondAttribute="centerY" id="Xt2-2E-jR6"/>
                 <constraint firstItem="2iM-y6-vsL" firstAttribute="height" secondItem="IC6-Kb-CiX" secondAttribute="height" id="bKu-HL-3NG"/>
                 <constraint firstItem="3tw-JG-v95" firstAttribute="height" secondItem="IC6-Kb-CiX" secondAttribute="height" id="beR-a5-oP9"/>
-                <constraint firstItem="Q6t-2a-sG3" firstAttribute="bottom" secondItem="wLM-2h-lsn" secondAttribute="bottom" id="fVS-75-h5j"/>
                 <constraint firstItem="NdZ-3N-coz" firstAttribute="leading" secondItem="Xie-hu-rqd" secondAttribute="trailing" constant="2" id="fsg-ni-CaD"/>
                 <constraint firstItem="Uq8-gx-ghN" firstAttribute="width" secondItem="45e-8i-Z6h" secondAttribute="width" id="lzF-vU-Eom"/>
                 <constraint firstItem="NdZ-3N-coz" firstAttribute="height" secondItem="YAI-kn-uBS" secondAttribute="height" id="o96-TE-oSd"/>
                 <constraint firstItem="IC6-Kb-CiX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="2" id="qdJ-Jt-lYH"/>
                 <constraint firstItem="cUx-9Y-lII" firstAttribute="leading" secondItem="45e-8i-Z6h" secondAttribute="trailing" constant="2" id="rJ3-9F-oHR"/>
-                <constraint firstItem="Q6t-2a-sG3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vGY-ts-pHx"/>
+                <constraint firstItem="2iM-y6-vsL" firstAttribute="top" secondItem="wLM-2h-lsn" secondAttribute="bottom" constant="2" id="t6b-04-wIa"/>
                 <constraint firstItem="3tw-JG-v95" firstAttribute="leading" secondItem="IC6-Kb-CiX" secondAttribute="trailing" constant="2" id="vGy-tI-pBT"/>
                 <constraint firstItem="45e-8i-Z6h" firstAttribute="top" secondItem="YAI-kn-uBS" secondAttribute="bottom" constant="2" id="wCi-t9-LQV"/>
                 <constraint firstItem="NdZ-3N-coz" firstAttribute="centerY" secondItem="YAI-kn-uBS" secondAttribute="centerY" id="wDx-Zo-Af1"/>

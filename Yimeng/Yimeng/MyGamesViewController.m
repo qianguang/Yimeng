@@ -7,6 +7,7 @@
 //
 
 #import "MyGamesViewController.h"
+#import "QGScrollView.h"
 
 @interface MyGamesViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    QGScrollView *mScorllView = [[QGScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH*0.618)];
+    [self.view addSubview:mScorllView];
 }
 
 - (void)didReceiveMemoryWarning {

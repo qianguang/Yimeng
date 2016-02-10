@@ -8,10 +8,7 @@
 
 #import "LoginViewController.h"
 
-@interface LoginViewController () <UIScrollViewDelegate>
-
-@property (weak, nonatomic) IBOutlet UIScrollView *mScrollView;
-@property (weak, nonatomic) IBOutlet UIPageControl *mPageControl;
+@interface LoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameTF;
 @property (weak, nonatomic) IBOutlet UITextField *userpwdTF;
@@ -35,7 +32,6 @@
     // Do any additional setup after loading the view from its nib.
     self.title = @"易梦";
     [self createNavigation];
-    [self createScrollView];
     [self createView];
 }
 
@@ -48,17 +44,6 @@
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     self.navigationItem.rightBarButtonItem = rightItem;
-}
-
-- (void)createScrollView
-{
-    NSArray *imageArray = [NSArray arrayWithObjects:@"1", @"2", nil];
-    for (int i = 0; i < imageArray.count; i++) {
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i*SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_WIDTH*0.618)];
-        imageView.image = [UIImage imageNamed:imageArray[i]];
-        [_mScrollView addSubview:imageView];
-    }
-    _mScrollView.contentSize = CGSizeMake(imageArray.count * SCREEN_WIDTH, _mScrollView.frame.size.height);
 }
 
 - (void)createView
@@ -100,13 +85,6 @@
 {
     //TODO:登录
     [appDelegate loginSuccess];
-}
-
-#pragma mark --UIScrollViewDelegate
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    _mPageControl.currentPage = scrollView.contentOffset.x/SCREEN_WIDTH;
 }
 
 - (void)didReceiveMemoryWarning {

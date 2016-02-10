@@ -9,8 +9,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
                 <outlet property="loginBtn" destination="TS1-g8-xMQ" id="sd8-2b-uJF"/>
-                <outlet property="mPageControl" destination="T2C-oJ-woi" id="aiV-0K-iG9"/>
-                <outlet property="mScrollView" destination="K2d-Ft-D7W" id="evl-20-c0H"/>
                 <outlet property="rememberBtn" destination="BqC-fk-1O1" id="gDV-8l-ipQ"/>
                 <outlet property="usernameLine" destination="Gnb-l1-ZPG" id="wMM-5i-G43"/>
                 <outlet property="usernameTF" destination="vlk-Z1-oR5" id="jH8-PE-LhM"/>
@@ -24,24 +22,12 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2d-Ft-D7W">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2d-Ft-D7W" customClass="QGScrollView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="K2d-Ft-D7W" secondAttribute="height" multiplier="1:0.618" id="ybP-9J-VeH"/>
                     </constraints>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="6ld-8U-qhD"/>
-                    </connections>
                 </scrollView>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="T2C-oJ-woi">
-                    <rect key="frame" x="140" y="161" width="39" height="37"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="39" id="K7q-RV-ANf"/>
-                        <constraint firstAttribute="height" constant="37" id="OIk-EB-ExG"/>
-                    </constraints>
-                    <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                </pageControl>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlk-Z1-oR5">
                     <rect key="frame" x="25" y="223" width="270" height="30"/>
                     <constraints>
@@ -127,16 +113,14 @@
                 <constraint firstAttribute="trailing" secondItem="TS1-g8-xMQ" secondAttribute="trailing" constant="25" id="aWd-87-wyj"/>
                 <constraint firstItem="XBH-NO-YXW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="b4a-ys-ZVf"/>
                 <constraint firstItem="DSy-qR-TDO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cbo-5R-6Vw"/>
-                <constraint firstItem="T2C-oJ-woi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dkY-3K-jPJ"/>
                 <constraint firstItem="vlk-Z1-oR5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eO6-6e-P0f"/>
                 <constraint firstItem="TS1-g8-xMQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="edS-RB-d8q"/>
                 <constraint firstItem="DSy-qR-TDO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="jxQ-pW-vst"/>
-                <constraint firstItem="vlk-Z1-oR5" firstAttribute="top" secondItem="T2C-oJ-woi" secondAttribute="bottom" constant="25" id="obE-L5-zrX"/>
+                <constraint firstItem="vlk-Z1-oR5" firstAttribute="top" secondItem="K2d-Ft-D7W" secondAttribute="bottom" constant="25" id="lHa-BU-E9X"/>
                 <constraint firstAttribute="trailing" secondItem="Gnb-l1-ZPG" secondAttribute="trailing" constant="25" id="odu-9e-GBq"/>
                 <constraint firstAttribute="trailing" secondItem="K2d-Ft-D7W" secondAttribute="trailing" id="pfr-wu-RzL"/>
                 <constraint firstItem="K2d-Ft-D7W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="r1i-VH-3ik"/>
                 <constraint firstItem="K2d-Ft-D7W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ybf-zM-6eY"/>
-                <constraint firstItem="T2C-oJ-woi" firstAttribute="bottom" secondItem="K2d-Ft-D7W" secondAttribute="bottom" id="yut-72-BSS"/>
                 <constraint firstItem="BqC-fk-1O1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="z4i-nV-jS5"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
