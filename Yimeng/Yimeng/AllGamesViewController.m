@@ -7,8 +7,9 @@
 //
 
 #import "AllGamesViewController.h"
+#import "GamesCell.h"
 
-@interface AllGamesViewController ()
+@interface AllGamesViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -23,7 +24,16 @@
 
 - (void)setup {
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+    self.mTableView.delegate = self;
+    self.mTableView.dataSource = self;
+    self.mTableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-40-64);
+    [self.mTableView registerNib:[UINib nibWithNibName:@"GamesCell" bundle:nil] forCellReuseIdentifier:@"GamesCell"];
+}
+
+- (void)requestDataListPullDown:(BOOL)pullDown
+{
+    [self stopRefreshing];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -31,9 +41,13 @@
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.textLabel.text = [NSString stringWithFormat:@"所有游戏第%ld行数据", (long)indexPath.row];
+    GamesCell *cell = [self.mTableView dequeueReusableCellWithIdentifier:@"GamesCell" forIndexPath:indexPath];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return  95.;
 }
 
 - (void)didReceiveMemoryWarning {

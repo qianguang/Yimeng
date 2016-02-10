@@ -6,8 +6,8 @@
 //  Copyright © 2016年 LQG. All rights reserved.
 //
 
-#import "QGViewController.h"
+#import "RefreshViewController.h"
 
-@interface MyGamesViewController : QGViewController
+@interface MyGamesViewController : RefreshViewController
 
 @end

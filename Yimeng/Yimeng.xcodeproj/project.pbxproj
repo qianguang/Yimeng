@@ -27,6 +27,18 @@
 		11DF96871C6B37E1003C1574 /* MyGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF96851C6B37E1003C1574 /* MyGamesViewController.m */; };
 		11DF96881C6B37E1003C1574 /* MyGamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DF96861C6B37E1003C1574 /* MyGamesViewController.xib */; };
 		11DF968C1C6B38E3003C1574 /* QGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF968B1C6B38E3003C1574 /* QGScrollView.m */; };
+		11DF96921C6B4522003C1574 /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF96901C6B4522003C1574 /* RefreshViewController.m */; };
+		11DF96931C6B4522003C1574 /* RefreshViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DF96911C6B4522003C1574 /* RefreshViewController.xib */; };
+		11DF96A61C6B4567003C1574 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 11DF96961C6B4567003C1574 /* MJRefresh.bundle */; };
+		11DF96A71C6B4567003C1574 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF96991C6B4567003C1574 /* MJRefreshBaseView.m */; };
+		11DF96A81C6B4567003C1574 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF969B1C6B4567003C1574 /* MJRefreshConst.m */; };
+		11DF96A91C6B4567003C1574 /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF969D1C6B4567003C1574 /* MJRefreshFooterView.m */; };
+		11DF96AA1C6B4567003C1574 /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF969F1C6B4567003C1574 /* MJRefreshHeaderView.m */; };
+		11DF96AB1C6B4567003C1574 /* UIScrollView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF96A11C6B4567003C1574 /* UIScrollView+Extension.m */; };
+		11DF96AC1C6B4567003C1574 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF96A31C6B4567003C1574 /* UIScrollView+MJRefresh.m */; };
+		11DF96AD1C6B4567003C1574 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF96A51C6B4567003C1574 /* UIView+Extension.m */; };
+		11DF96B11C6B4886003C1574 /* GamesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DF96AF1C6B4886003C1574 /* GamesCell.m */; };
+		11DF96B21C6B4886003C1574 /* GamesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DF96B01C6B4886003C1574 /* GamesCell.xib */; };
 		11F03FD11C699DBD00C49B3A /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F03FCF1C699DBD00C49B3A /* FirstPageViewController.m */; };
 		11F03FD21C699DBD00C49B3A /* FirstPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F03FD01C699DBD00C49B3A /* FirstPageViewController.xib */; };
 		11F2BFBF1C6A439C00D2CEFB /* AllGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2BFBD1C6A439C00D2CEFB /* AllGamesViewController.m */; };
@@ -90,6 +102,28 @@
 		11DF96861C6B37E1003C1574 /* MyGamesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyGamesViewController.xib; sourceTree = "<group>"; };
 		11DF968A1C6B38E3003C1574 /* QGScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGScrollView.h; sourceTree = "<group>"; };
 		11DF968B1C6B38E3003C1574 /* QGScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGScrollView.m; sourceTree = "<group>"; };
+		11DF968F1C6B4522003C1574 /* RefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshViewController.h; sourceTree = "<group>"; };
+		11DF96901C6B4522003C1574 /* RefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshViewController.m; sourceTree = "<group>"; };
+		11DF96911C6B4522003C1574 /* RefreshViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshViewController.xib; sourceTree = "<group>"; };
+		11DF96961C6B4567003C1574 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		11DF96971C6B4567003C1574 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		11DF96981C6B4567003C1574 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		11DF96991C6B4567003C1574 /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		11DF969A1C6B4567003C1574 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		11DF969B1C6B4567003C1574 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		11DF969C1C6B4567003C1574 /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		11DF969D1C6B4567003C1574 /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		11DF969E1C6B4567003C1574 /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		11DF969F1C6B4567003C1574 /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		11DF96A01C6B4567003C1574 /* UIScrollView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extension.h"; sourceTree = "<group>"; };
+		11DF96A11C6B4567003C1574 /* UIScrollView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Extension.m"; sourceTree = "<group>"; };
+		11DF96A21C6B4567003C1574 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		11DF96A31C6B4567003C1574 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		11DF96A41C6B4567003C1574 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		11DF96A51C6B4567003C1574 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		11DF96AE1C6B4886003C1574 /* GamesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamesCell.h; sourceTree = "<group>"; };
+		11DF96AF1C6B4886003C1574 /* GamesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamesCell.m; sourceTree = "<group>"; };
+		11DF96B01C6B4886003C1574 /* GamesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamesCell.xib; sourceTree = "<group>"; };
 		11F03FCE1C699DBD00C49B3A /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
 		11F03FCF1C699DBD00C49B3A /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
 		11F03FD01C699DBD00C49B3A /* FirstPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPageViewController.xib; sourceTree = "<group>"; };
@@ -223,6 +257,9 @@
 				117B250D1C6748A30016D47D /* QGNavigationController.h */,
 				117B250E1C6748A30016D47D /* QGNavigationController.m */,
 				117B250F1C6748A30016D47D /* QGNavigationController.xib */,
+				11DF968F1C6B4522003C1574 /* RefreshViewController.h */,
+				11DF96901C6B4522003C1574 /* RefreshViewController.m */,
+				11DF96911C6B4522003C1574 /* RefreshViewController.xib */,
 			);
 			name = BaseViewController;
 			sourceTree = "<group>";
@@ -233,6 +270,7 @@
 				1112D1DB1C68DAD6004F997A /* Utility.h */,
 				1112D1DC1C68DAD6004F997A /* Utility.m */,
 				117B25131C674EA80016D47D /* GlobalMarcro.h */,
+				11DF96941C6B4567003C1574 /* MJRefresh */,
 				11F2BFD11C6A5E9200D2CEFB /* XTPageControl */,
 				1112D1E01C68DB91004F997A /* popupview */,
 			);
@@ -248,6 +286,37 @@
 			name = CustomView;
 			sourceTree = "<group>";
 		};
+		11DF96941C6B4567003C1574 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				11DF96951C6B4567003C1574 /* BaiduMapSDK */,
+				11DF96961C6B4567003C1574 /* MJRefresh.bundle */,
+				11DF96971C6B4567003C1574 /* MJRefresh.h */,
+				11DF96981C6B4567003C1574 /* MJRefreshBaseView.h */,
+				11DF96991C6B4567003C1574 /* MJRefreshBaseView.m */,
+				11DF969A1C6B4567003C1574 /* MJRefreshConst.h */,
+				11DF969B1C6B4567003C1574 /* MJRefreshConst.m */,
+				11DF969C1C6B4567003C1574 /* MJRefreshFooterView.h */,
+				11DF969D1C6B4567003C1574 /* MJRefreshFooterView.m */,
+				11DF969E1C6B4567003C1574 /* MJRefreshHeaderView.h */,
+				11DF969F1C6B4567003C1574 /* MJRefreshHeaderView.m */,
+				11DF96A01C6B4567003C1574 /* UIScrollView+Extension.h */,
+				11DF96A11C6B4567003C1574 /* UIScrollView+Extension.m */,
+				11DF96A21C6B4567003C1574 /* UIScrollView+MJRefresh.h */,
+				11DF96A31C6B4567003C1574 /* UIScrollView+MJRefresh.m */,
+				11DF96A41C6B4567003C1574 /* UIView+Extension.h */,
+				11DF96A51C6B4567003C1574 /* UIView+Extension.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		11DF96951C6B4567003C1574 /* BaiduMapSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaiduMapSDK;
+			sourceTree = "<group>";
+		};
 		11F03FCD1C699B8900C49B3A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +328,9 @@
 				111340971C6A385F00DEBC02 /* GameCenterViewController.xib */,
 				11F2BFBC1C6A439C00D2CEFB /* AllGamesViewController.h */,
 				11F2BFBD1C6A439C00D2CEFB /* AllGamesViewController.m */,
+				11DF96AE1C6B4886003C1574 /* GamesCell.h */,
+				11DF96AF1C6B4886003C1574 /* GamesCell.m */,
+				11DF96B01C6B4886003C1574 /* GamesCell.xib */,
 				11DF96841C6B37E1003C1574 /* MyGamesViewController.h */,
 				11DF96851C6B37E1003C1574 /* MyGamesViewController.m */,
 				11DF96861C6B37E1003C1574 /* MyGamesViewController.xib */,
@@ -384,12 +456,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F03FD21C699DBD00C49B3A /* FirstPageViewController.xib in Resources */,
+				11DF96B21C6B4886003C1574 /* GamesCell.xib in Resources */,
 				117B24DE1C67465C0016D47D /* LaunchScreen.storyboard in Resources */,
 				111340991C6A385F00DEBC02 /* GameCenterViewController.xib in Resources */,
 				117B24DB1C67465C0016D47D /* Assets.xcassets in Resources */,
 				11DF96881C6B37E1003C1574 /* MyGamesViewController.xib in Resources */,
 				117B25071C6748360016D47D /* QGViewController.xib in Resources */,
+				11DF96931C6B4522003C1574 /* RefreshViewController.xib in Resources */,
 				117B250C1C67485C0016D47D /* LoginViewController.xib in Resources */,
+				11DF96A61C6B4567003C1574 /* MJRefresh.bundle in Resources */,
 				117B25111C6748A30016D47D /* QGNavigationController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,18 +490,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DF96B11C6B4886003C1574 /* GamesCell.m in Sources */,
 				11F2BFDB1C6A5E9200D2CEFB /* XTTabBarScrollView.m in Sources */,
 				117B25061C6748360016D47D /* QGViewController.m in Sources */,
 				117B250B1C67485C0016D47D /* LoginViewController.m in Sources */,
+				11DF96A81C6B4567003C1574 /* MJRefreshConst.m in Sources */,
 				11F2BFBF1C6A439C00D2CEFB /* AllGamesViewController.m in Sources */,
+				11DF96AB1C6B4567003C1574 /* UIScrollView+Extension.m in Sources */,
+				11DF96AD1C6B4567003C1574 /* UIView+Extension.m in Sources */,
 				117B24D91C67465C0016D47D /* Yimeng.xcdatamodeld in Sources */,
 				111340981C6A385F00DEBC02 /* GameCenterViewController.m in Sources */,
+				11DF96A71C6B4567003C1574 /* MJRefreshBaseView.m in Sources */,
 				11DF96871C6B37E1003C1574 /* MyGamesViewController.m in Sources */,
+				11DF96AA1C6B4567003C1574 /* MJRefreshHeaderView.m in Sources */,
 				117B24D01C67465C0016D47D /* AppDelegate.m in Sources */,
 				1112D1E31C68DB91004F997A /* LPPopup.m in Sources */,
 				1112D1DD1C68DAD6004F997A /* Utility.m in Sources */,
+				11DF96A91C6B4567003C1574 /* MJRefreshFooterView.m in Sources */,
 				11F2BFD91C6A5E9200D2CEFB /* XTPageViewController.m in Sources */,
+				11DF96921C6B4522003C1574 /* RefreshViewController.m in Sources */,
 				11DF968C1C6B38E3003C1574 /* QGScrollView.m in Sources */,
+				11DF96AC1C6B4567003C1574 /* UIScrollView+MJRefresh.m in Sources */,
 				117B25101C6748A30016D47D /* QGNavigationController.m in Sources */,
 				11F2BFDA1C6A5E9200D2CEFB /* XTTabBar.m in Sources */,
 				117B24CD1C67465C0016D47D /* main.m in Sources */,
@@ -561,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Yimeng/Yimeng.pch";
@@ -576,6 +661,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Yimeng/Yimeng.pch";

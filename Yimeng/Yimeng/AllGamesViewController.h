@@ -6,8 +6,8 @@
 //  Copyright © 2016年 LQG. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RefreshViewController.h"
 
-@interface AllGamesViewController : UITableViewController
+@interface AllGamesViewController : RefreshViewController
 
 @end

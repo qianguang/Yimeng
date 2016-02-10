@@ -37,7 +37,11 @@
     [self createTab];
     
     allGamesVC = [[AllGamesViewController alloc] init];
+    allGamesVC.isRequireRefreshHeader = YES;
+    allGamesVC.isRequireRefreshFooter = YES;
+    
     myGamesVC = [[MyGamesViewController alloc] init];
+    myGamesVC.isRequireRefreshHeader = YES;
     _viewControllersArray = [NSArray arrayWithObjects:allGamesVC, myGamesVC, nil];
     
     _pageVC = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
