@@ -72,6 +72,12 @@
                     <constraint firstItem="5vk-mX-TIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qEx-q1-9YF"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="gameDescription" destination="PuR-jZ-56I" id="agf-hq-Cl6"/>
+                <outlet property="gameName" destination="uQd-A5-3WC" id="6GH-bH-q3w"/>
+                <outlet property="gamePic" destination="tqU-1l-MEH" id="cAy-8q-Vg9"/>
+                <outlet property="installBtn" destination="fQg-c8-bT7" id="lln-2J-K7a"/>
+            </connections>
             <point key="canvasLocation" x="234" y="344.5"/>
         </tableViewCell>
     </objects>

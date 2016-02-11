@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 
-@interface LoginViewController ()
+@interface LoginViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameTF;
 @property (weak, nonatomic) IBOutlet UITextField *userpwdTF;
@@ -17,6 +17,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *rememberBtn;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+
+@property (strong, nonatomic) UITextField *currentTextField;
 
 @end
 
@@ -31,8 +33,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"易梦";
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardWillHidden:) name:UIKeyboardWillHideNotification object:nil];
+    
     [self createNavigation];
     [self createView];
+}
+
+- (void)keyBoardWillShow:(NSNotification *)notify
+{
+    NSDictionary *dict = notify.userInfo;
+    CGRect endRect = [[dict objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    if (endRect.size.height > self.view.frame.size.height-CGRectGetMaxY(_currentTextField.frame)) {
+        self.view.frame = CGRectMake(0, -(endRect.size.height-(SCREEN_HEIGHT-CGRectGetMaxY(_currentTextField.frame))), SCREEN_WIDTH, self.view.frame.size.height);
+    }
+}
+
+- (void)keyBoardWillHidden:(NSNotification *)notify
+{
+     NSLog(@"%@", notify);
+    self.view.frame = CGRectMake(0, 64, SCREEN_WIDTH, self.view.frame.size.height);
 }
 
 - (void)createNavigation
@@ -85,6 +106,28 @@
 {
     //TODO:登录
     [appDelegate loginSuccess];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [_currentTextField resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    _currentTextField = textField;
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+//    [_currentTextField resignFirstResponder];
+    if (textField == _usernameTF) {
+        [_userpwdTF becomeFirstResponder];
+    }else if (textField == _userpwdTF){
+        [_userpwdTF resignFirstResponder];
+    }
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {

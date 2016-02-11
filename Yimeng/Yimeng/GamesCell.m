@@ -8,10 +8,21 @@
 
 #import "GamesCell.h"
 
+@interface GamesCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *gamePic;
+@property (weak, nonatomic) IBOutlet UILabel *gameName;
+@property (weak, nonatomic) IBOutlet UILabel *gameDescription;
+@property (weak, nonatomic) IBOutlet UIButton *installBtn;
+
+
+@end
+
 @implementation GamesCell
 
 - (void)awakeFromNib {
     // Initialization code
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
